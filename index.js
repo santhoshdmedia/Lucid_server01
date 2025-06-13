@@ -106,7 +106,7 @@ app.post('/send-email', async (req, res) => {
       subject: sanitizedSubject,
       name: sanitizedName,
       year: new Date().getFullYear(),
-      companyName: "Your Company",
+      companyName: "Lucid petro chemical",
       message: sanitizedMessage
     });
 
