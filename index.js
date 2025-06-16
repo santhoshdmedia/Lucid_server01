@@ -118,10 +118,10 @@ app.post('/send-email', async (req, res) => {
 
     // Send email
     const mailOptions = {
-      from: `"Website Contact" <${process.env.EMAIL_USERNAME}>`,
+      from: `"Lucid petro chemical" <${process.env.EMAIL_USERNAME}>`,
       to: process.env.ADMIN_EMAIL || to, // Send to admin by default
       replyTo: to, // Allow direct replies to sender
-      subject: `Website Contact: ${sanitizedSubject}`,
+      subject: `Lucid petro chemical: ${sanitizedSubject}`,
       text,
       html,
       headers: {
